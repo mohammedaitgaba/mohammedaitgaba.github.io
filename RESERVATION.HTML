@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENT ME NOW</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <div><img src="./pics/LOOGO.png" alt="logo rent " class="logo"></div>
+        <nav class="nav_">
+
+            <ul class="nav_liste">
+                <li><a class="active" href="Index.html"> home </a></li>
+                <li><a href="gallery.html"> Gallery </a></li>
+                <li><a href=""> Booking </a></li>
+                <li><a href="contact.html"> contact </a></li>
+                <!-- <li><a href=""> about </a></li> -->
+
+            </ul>
+
+        </nav>
+
+        <div class="menu">
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+        </div>
+    </div>
+    <section class="reserver">
+        <div class="h1"><H1>Booking</H1> </div><hr class="bruh">
+        
+        
+        <section class="container">
+        
+            <form >
+                <p class="label">Choose the type of the vehicle </p>
+                <select id="list-test">
+                    <option value="moto">Motorcycle</option>
+                    <option value="cars">Cars</option>
+                    <option value="camion">Trucks</option>
+                    <option value="engine">Construction Machine</option>
+                    <option value="" style="display: none;" selected>Choose</option>
+                </select>
+                <p class="label">vehicles available</p>
+                <select id="seconde-select">
+                    <option></option>
+                </select>
+                <div id="input-boite-vitess">
+                    <input type="radio" id="automatique" name="fixed" > Automatique</input>
+                    <input type="radio" id="manual" name="fixed" > Manual</input>
+
+                </div>
+            <div id="inputs">
+
+                <div id="fuel-select">
+                    <input type="radio" id="Diesel" name="fuel-type" > Diesel</input>
+                </div>
+                <div id="fuel-select2">
+                    <input type="radio" id="Essance" name="fuel-type" >  Essance</input>
+                </div>
+                <div id="fuel-select3">
+                    <input type="radio" id="Hybride" name="fuel-type"> Hybride</input>
+                </div>
+                <div id="fuel-select4">
+                    <input type="radio" id="Electrique" name="fuel-type"> Electrique</input>
+                </div>
+            </div>
+
+                <input type="number" id="myNumber" min="1" max="60" value="1" required>
+                <div id="submit">
+                    <button type="button" onclick="calcule()"> 
+                        Submit
+                    </button>
+                </div>
+    
+            </form>
+            <div class="hidden-img">
+            
+                <img src="" id="img" alt="">
+        
+            </div>
+        </section>
+       
+        <div id="popup">
+            <div id="small-container" >
+            <div id="true"></div>
+            <p class="choice">Confirmed </p>
+            <div id="fuel-choice">  </div>
+            <div id="day-numbre"> </div>
+
+            <div id="final-msg"> </div>
+            <div id="ok-button">
+                <button onclick="hide()"> DONE
+                </button>
+
+            </div>
+        </div>
+
+        </div>
+        
+ 
+    </section>
+
+    
+    <footer>
+        <div class="ftr-container">
+            <div class="text-ftr">
+                <p>Terms & Conditions </p>
+                <p class="brr">Privacy policy </p></div>
+            <div class="img-ftr">
+                <a href="https://www.instagram.com/"><img src="./pics/instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/?lang=fr"><img src="./pics/twitter.png" alt="twitter"></a>
+                <a href="https://web.facebook.com/"><img src="./pics/facebook.png" alt="facebook"></a>
+                <a href="https://fr.linkedin.com/"><img src="./pics/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+                
+            
+        </footer>
+    
+    <script src="reservation.js"></script>
+
+    <script src="home.js"> </script>
+</body>
+
+</html>

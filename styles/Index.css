@@ -490,7 +490,7 @@ h2{
         flex-direction: column;
         width: 100%;
         justify-content:space-evenly;
-        height: 100vh;
+        height: fit-content;
         align-items: center;}
 
       .cliens-section{
@@ -542,7 +542,7 @@ h2{
       justify-content: space-evenly;
       
       width: 100vw;
-      height: 140vh;
+      height: fit-content;
       margin-top: 10%;
     }
 
